@@ -1,0 +1,87 @@
+index.css
+*{
+    margin: 0px;
+    padding: 0px;;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    letter-spacing: 1px;
+    background-color: #111
+}
+.container {  
+    width: 90%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 1rem;
+    color: red;
+    text-align: center;
+    border: 2px solid;
+}
+
+.container a{
+    display: inline-block;
+    margin-top: 10px;
+    color: red;
+    font-size: 20px;
+    padding: 0px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.movie-each{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.2);
+    text-align: center;
+    height: 100%;
+}
+
+.movie-each img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.movie-each h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}
+
+.movie-each p{
+    font-size: 1rem;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px){
+    .contatiner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width:992px){
+    .contatiner{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+}
